@@ -1,0 +1,21 @@
+.slider{
+    height: 500px;
+    background-image: url(../../resources/bannerbackground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.search-bar{
+    text-decoration: none;
+    border: none;
+    border-radius: 10%;
+    padding: 5px 10px ;
+    width: 400px;
+
+}
+.btn-style{
+    border: none;
+    background-color: #F91944;
+    border-radius: 10%;
+    padding: 5px 10px;
+    color:white;
+}
