@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -11,9 +11,16 @@ import Cart from './Compunents/Cart/Cart';
 import Login from './Compunents/Login/Login';
 import Signup from './Compunents/Signup/Signup'
 import Home from './Compunents/Home/Home';
+
+export const cetagoryContext = createContext()
+
 function App() {
+
+  const [cetagory, setCetagory] = useState('lunch')
+  console.log("ceta", cetagory)
+
   return (
-    <div>
+    <cetagoryContext.Provider value={[cetagory, setCetagory]}>
       <Router>
         <Header></Header>
         <Switch>
@@ -35,7 +42,7 @@ function App() {
         </Switch>
       </Router>
 
-    </div>
+    </cetagoryContext.Provider>
   );
 }
 

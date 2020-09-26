@@ -1,0 +1,12 @@
+.cet-btns{
+    border: none;
+    padding:5px 10px;
+    border-radius: 10%;
+    margin: 0 10px;
+    background-color: white;
+    text-decoration: none;
+}
+.cet-btns:hover{
+    color: #F91944;
+    text-decoration: none;
+}
