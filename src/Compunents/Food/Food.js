@@ -7,7 +7,7 @@ const Food = (props) => {
     return (
 
         <div className="col mb-4">
-            <Link className='card-style' to='/foodDetails'>
+            <Link className='card-style' to='/food-details'>
                 <div className="card h-100 pt-3">
                     <img src={image} className="card-img-top w-50 m-auto" alt="product images" />
                     <div className="card-body text-center">
