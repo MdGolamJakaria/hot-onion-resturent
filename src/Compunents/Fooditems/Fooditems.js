@@ -11,8 +11,10 @@ const Fooditems = () => {
     const [food, setFood] = useState()
 
     useEffect(() => {
-        const meatchedFoods = foods.filter(foods => foods.cetagory === cetagory)
-        setFood(meatchedFoods)
+        if (cetagory) {
+            const meatchedFoods = foods.filter(foods => foods.cetagory === cetagory)
+            setFood(meatchedFoods)
+        }
     }, [cetagory])
 
     return (
@@ -24,8 +26,8 @@ const Fooditems = () => {
             <div className="row row-cols-1 row-cols-md-3">
 
                 {
-                    console.log(food)
-                    // food.map(food => <Food food={food} key={food.id} ></Food>)
+
+                    food && food.map(food => <Food food={food} key={food.id} ></Food>)
                 }
 
             </div>

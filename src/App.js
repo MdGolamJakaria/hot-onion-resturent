@@ -16,8 +16,7 @@ export const cetagoryContext = createContext()
 
 function App() {
 
-  const [cetagory, setCetagory] = useState('lunch')
-  console.log("ceta", cetagory)
+  const [cetagory, setCetagory] = useState('breakfast')
 
   return (
     <cetagoryContext.Provider value={[cetagory, setCetagory]}>
